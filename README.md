@@ -8,6 +8,6 @@ This is the VRSC Incubator Fall 2018 repository. This is your home base, and her
 ### Final Note
 To use this repo correctly, head on over to Lesson 1 for an in-depth set-up guide for Github and Unity.
 
-Each lesson contains a README.md reiterating the lessons we learn in each workshop. Use the README to follow along during the lesson and reinforce the lessons at later times. If we manipulate Unity throughout the lesson, completed code will be included in the folder.
+Each lesson contains a README.md reiterating the lessons we learn in each workshop. Use the README.md to follow along during the lesson and reinforce the lessons at later times. If we manipulate Unity throughout the lesson, completed code will be included in the folder.
 
-Remember, this is your ultimate resource for learning VR dev. You've got this!
+Remember, this is your ultimate resource for XR development.
