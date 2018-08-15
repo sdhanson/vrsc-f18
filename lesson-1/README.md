@@ -2,7 +2,7 @@
 
 **Curriculum:**
 	
-	* What is Unity? Why use it? Best resources for Unity?
+	-What is Unity? Why use it? Best resources for Unity?
 	
 	* Unity + Github Set-up and Installation
 	
