@@ -1,93 +1,91 @@
 # Unity Lesson Guide
 
-## Curriculum:
-* What is Unity? Why use it? Best resources for Unity?
-* Unity + Github Set-up and Installation
-* Navigating the Unity Window and Folder Structure
-* Mini-project: Rocket Booster
-* Scene Set-up
-* Game-Objects / Pre-fabs
-* Physics System and Colliders
-* Unity + Github
-* Hotkeys
-* Computer Input
-* Lighting and Rendering
-* Enumerations
-* +++
+**Curriculum:**
+	* What is Unity? Why use it? Best resources for Unity?
+	* Unity + Github Set-up and Installation
+	* Navigating the Unity Window and Folder Structure
+	* Mini-project: Rocket Booster
+	* Scene Set-up
+	* Game-Objects / Pre-fabs
+	* Physics System and Colliders
+	* Unity + Github
+	* Hotkeys
+	* Computer Input
+	* Lighting and Rendering
+	* Enumerations
+	* +++
 
-Unity Basics
-What is Unity?
+## Unity Basics
+### What is Unity?
 
 “Unity is the ultimate game development platform” and game engine. A game engine is a software development environment designed for people to build video games. Basically, Unity is a tool that provides us a simple(ish) interface to easily create 2D and 3D applications. Unity uses C# and/or JavaScript.
 
 Another popular game engine is Unreal Engine.
 
-Why use it?
+### Why use it?
 
 Unity is at the forefront of the XR market. In 2017, 90% of Samsung GearVR and 53% of Oculus Rift games were made using Unity. 
 
 This is because Unity has the most tools and hardware support from XR hardware suppliers, including Oculus and HoloLens. These XR suppliers use Unity as their game engine and provide SDKs (software development kits) for XR development in Unity.
 
-What are the best Unity resources?
+### What are the best Unity resources?
 
-Unity User Manual
-Unity Scripting API
-Unity Forum
-Microsoft C# guide
-Google & the VRSC E-Board!
+	* Unity User Manual
+	* Unity Scripting API
+	* Unity Forum
+	* Microsoft C# guide
+	* Google & the VRSC E-Board!
 
-Unity + Github Set-up and Installation
-Github Installation / Set-up
+## Unity + Github Set-up and Installation
+### Github Installation / Set-up
 
 Prerequisites:
-Create a Github account
-Download Github Desktop
+	* Create a Github account
+	* Download Github Desktop
 
 Git is a version control system, or a platform that allows programmers to track, share, and save their code. Github is a service that extends Git and creates a simple interface for developers to use Git. Github is great for XR development because it allows you to share your application with team members and save old versions of the game in case you want to restore an old game version. Github Desktop is a desktop app that is easier to use than the typical Github command line tools, especially for Unity.
 
-With Github, you can easily clone (aka download) repositories (aka an overarching project folder), make changes to the code, and commit (aka save) your changes to the code base. Check out this guide and get comfortable with Github.
+**With Github, you can easily clone (aka download) repositories (aka an overarching project folder), make changes to the code, and commit (aka save) your changes to the code base. Check out this guide and get comfortable with Github.**
 
 We will be using Github to provide resources through the vrsc-f18 repository and for version control during development. 
 
 Now, let’s fork the vrsc-f18 repository. A fork is a copy of a repository; you can change the code in the forked version without affecting the original repository.
-Log into Github
-Navigate to the vrsc-f18 repo
-Click “fork” in the upper right corner
+	* Log into Github
+	* Navigate to the vrsc-f18 repo
+	* Click “fork” in the upper right corner
 
 That’s it. When you want to use/change the code from the vrsc-f18 repo, be sure to use your forked version.
 
-Unity Installation / Set-Up
-Download Unity 2018.2.1 from this page.
+### Unity Installation / Set-Up
+	* Download Unity 2018.2.1 from this page.
 
-* The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
+Note: The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
 
 That’s it.
 
-
-
-The Unity Window and Folder Structure
-Basic Structure of a Unity Project
+## The Unity Window and Folder Structure
+### Basic Structure of a Unity Project
 
 Now, we will explore the Unity window/interface and project structure. 
 
 Create a new project
-Open Unity and select “New”
-Name the project
-Specify a location to save the project (desktop is fine)
-Keep the 3D template
-Create!
-
+	* Open Unity and select “New”
+	* Name the project
+	* Specify a location to save the project (desktop is fine)
+	* Keep the 3D template
+	* Create!
 
 Unity will open to the default window with a blank scene. The default window has a few main sections: 
-Project / Console
-Project: All the files in your project (like file explorer). You can drag and drop files into this area to add files to your project. 
-Console: The window where you will see Debug messages, errors, etc when you run your project.
-Inspector: A detailed view of a selected component in the scene.
-Hierarchy: All the game objects in the scene and their relationships.
-Scene / Game
-Scene view: Shows the currently open scene
-Game view: Shows what the game looks like when you hit play. *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint
-Toolbar: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into each of these in more detail later on.
+	1. Project / Console
+		a. Project: All the files in your project (like file explorer). You can drag and drop files into this area 		      to add files to your project. 
+		b. Console: The window where you will see Debug messages, errors, etc when you run your project.
+	2. Inspector: A detailed view of a selected component in the scene.
+	3. Hierarchy: All the game objects in the scene and their relationships.
+	4. Scene / Game
+		a. Scene view: Shows the currently open scene
+		b. Game view: Shows what the game looks like when you hit play. 
+		*Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
+		c. Toolbar: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into 		    each of these in more detail later on.
 
 You can move around each section for a workflow you like. This is my default workflow:
 
@@ -95,41 +93,47 @@ You can move around each section for a workflow you like. This is my default wor
 Unity has opened us up to a default, untitled scene. Here is a great description of scenes from the Microsoft Unity guide:
 
 “Everything that runs in your game exists in a scene. When you package your game for a platform, the resulting game is a collection of one or more scenes, plus any platform-­dependent code you add. You can have as many scenes as you want in a project. A scene can be thought of as a level in a game, though you can have multiple levels in one scene file by just moving the player/camera to different points in the scene. When you download third-party packages or even sample games from the asset store, you typically must look for the scene files in your project to open. A scene file is a single file that contains all sorts of metadata about the resources used in the project for the current scene and its properties. It’s important to save a scene often by pressing Ctrl+S during development, just as with any other tool. 
+
 Typically, Unity opens the last scene you’ve been working on, although sometimes when Unity opens a project it creates a new empty scene and you have to go find the scene in your project explorer. This can be pretty confusing for new users, but it’s important to remember if you happen to open up your last project and wonder where all your work went! Relax, you’ll find the work in a scene file you saved in your project.
+
 In a scene, you can’t see anything without a camera and you can’t hear anything without an Audio Listener component attached to some GameObject. Notice, however, that in any new scene, Unity always creates a camera that has an Audio Listener component already on it.”
+
 And, here’s a great description of Unity GameObjects from the Microsoft guide:
+
 “Virtually everything in your scene is a GameObject. Think of System.Object in the .NET Framework. Almost all types derive from it. The same concept goes for GameObject. It’s the base class for all objects in your Unity scene. All of the objects shown below derive from a GameObject. 
+
 A GameObject is pretty simple as it pertains to the Inspector window. You can see in the figure below an empty GameObject that was added to a scene; note its properties in the Inspector. GameObjects by default have no visual properties except the widget Unity shows when you highlight the object. At this point, it’s simply a fairly empty object.
  
 A GameObject has a Name, a Tag, a Layer and the Transform (probably the most important property of all).
+
 The Transform property is simply the position, rotation and scale of any GameObject. Unity uses the left-hand coordinate system, in which you think of the coordinates of your computer screen as X (horizontal), Y (vertical) and Z (depth, that is, coming in or going out of the screen).
-Components
+
+### Components
 You add functionality to GameObjects by adding Components. Everything you add is a Component and they all show up in the Inspector window. There are MeshRender and SpriteRender Components; Components for audio and camera functionality; physics-related Components (colliders and rigidbodies), particle systems, path-finding systems, third-party custom Components, and more. You use a script Component to assign code to an object. Components are what bring your GameObjects to life by adding functionality. You can also add scripts to GameObjects, which can define certain functionality for the GameObject.”
 Here’s an example of the Unity window with an open scene from the Sharp Shooter Tutorial:
 
 In the Hierarchy, we see all of the GameObjects for the Level 1 Scene. The Inspector shows us the details for the selected object, the main camera. In the Project tab, we see all of the imported assets for the project, including audio, textures, scripts, etc--everything we need to create this scene/level.
 While we only see the Assets folder in the Project window, the Unity project structure also includes Library, ProjectSettings, and Temp folders. This can be seen in the folder where you saved your Unity Project. For example, my Intro project is like this:
 
-
 The Library folder holds metadata for assets. The ProjectSettings folder contains specific configuration settings for your project. The Temp folder is only present while the Unity Project is open; it contains temp files Unity needs to build your project as you work on it.
 
 While the project structure is not that important to understand for development, it will be helpful to know the basics when we use Github with Unity.
 
-Mini-Project: Rocket Booster
+## Mini-Project: Rocket Booster
 
 Let’s dive into Unity by creating a simple 3D rocket game. At points, I will point out side notes that give interesting information, but are not crucial for a beginner’s understanding.
 
-Part 1
+### Part 1
 Main Objectives:
-Basic Project / Scene Set-up
-Lighting
-GameObjects
-Meshes / Materials
-Individual Task: Creating a Rocket Ship
-Primitives
-Placeholder Art
-Prefabs
-Grouping
+	* Basic Project / Scene Set-up
+	* Lighting
+	* GameObjects
+	* Meshes / Materials
+	* Individual Task: Creating a Rocket Ship
+	* Primitives
+	* Placeholder Art
+	* Prefabs
+	* Grouping
 
 Creating the Project with a Github repository
 First, we will create a new Unity project and set it up with a Github repo.
