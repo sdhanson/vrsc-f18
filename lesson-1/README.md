@@ -1,21 +1,19 @@
-#Unity Lesson Guide
-*NOTE:
-This will all be moved to the github & put into however many lessons we have time to do. I can add / remove anything. Also, this is pretty specific, but should be much faster to go through while actually presenting. And, I took the example project from a Udemy course. *
+# Unity Lesson Guide
 
-Curriculum:
-What is Unity? Why use it? Best resources for Unity?
-Unity + Github Set-up and Installation
-Navigating the Unity Window and Folder Structure
-Mini-project: Rocket Booster
-Scene Set-up
-Game-Objects / Pre-fabs
-Physics System and Colliders
-Unity + Github
-Hotkeys
-Computer Input
-Lighting and Rendering
-Enumerations
-+++
+## Curriculum:
+* What is Unity? Why use it? Best resources for Unity?
+* Unity + Github Set-up and Installation
+* Navigating the Unity Window and Folder Structure
+* Mini-project: Rocket Booster
+* Scene Set-up
+* Game-Objects / Pre-fabs
+* Physics System and Colliders
+* Unity + Github
+* Hotkeys
+* Computer Input
+* Lighting and Rendering
+* Enumerations
+* +++
 
 Unity Basics
 What is Unity?
