@@ -1,18 +1,31 @@
 # Unity Lesson Guide
 
 **Curriculum:**
+	
 	* What is Unity? Why use it? Best resources for Unity?
+	
 	* Unity + Github Set-up and Installation
+	
 	* Navigating the Unity Window and Folder Structure
+	
 	* Mini-project: Rocket Booster
+	
 	* Scene Set-up
+	
 	* Game-Objects / Pre-fabs
+	
 	* Physics System and Colliders
+	
 	* Unity + Github
+	
 	* Hotkeys
+	
 	* Computer Input
+	
 	* Lighting and Rendering
+	
 	* Enumerations
+	
 	* +++
 
 ## Unity Basics
