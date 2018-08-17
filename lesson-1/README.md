@@ -3,28 +3,17 @@
 **Curriculum:**
   * What is Unity? Why use it? Best resources for Unity?
   * Unity + Github Set-up and Installation
-	
-	* Navigating the Unity Window and Folder Structure
-	
-	* Mini-project: Rocket Booster
-	
-	* Scene Set-up
-	
-	* Game-Objects / Pre-fabs
-	
-	* Physics System and Colliders
-	
-	* Unity + Github
-	
-	* Hotkeys
-	
-	* Computer Input
-	
-	* Lighting and Rendering
-	
-	* Enumerations
-	
-	* +++
+  * Navigating the Unity Window and Folder Structure
+  * Mini-project: Rocket Booster
+  * Scene Set-up
+  * Game-Objects / Pre-fabs
+  * Physics System and Colliders
+  * Unity + Github
+  * Hotkeys
+  * Computer Input
+  * Lighting and Rendering
+  * Enumerations
+  * +++
 
 ## Unity Basics
 ### What is Unity?
@@ -61,14 +50,14 @@ Git is a version control system, or a platform that allows programmers to track,
 We will be using Github to provide resources through the vrsc-f18 repository and for version control during development. 
 
 Now, let’s fork the vrsc-f18 repository. A fork is a copy of a repository; you can change the code in the forked version without affecting the original repository.
-	* Log into Github
-	* Navigate to the vrsc-f18 repo
-	* Click “fork” in the upper right corner
+  * Log into Github
+  * Navigate to the vrsc-f18 repo
+  * Click “fork” in the upper right corner
 
 That’s it. When you want to use/change the code from the vrsc-f18 repo, be sure to use your forked version.
 
 ### Unity Installation / Set-Up
-	* Download Unity 2018.2.1 from this page.
+  * Download Unity 2018.2.1 from this page.
 
 Note: The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
 
@@ -80,11 +69,11 @@ That’s it.
 Now, we will explore the Unity window/interface and project structure. 
 
 Create a new project
-	* Open Unity and select “New”
-	* Name the project
-	* Specify a location to save the project (desktop is fine)
-	* Keep the 3D template
-	* Create!
+  * Open Unity and select “New”
+  * Name the project
+  * Specify a location to save the project (desktop is fine)
+  * Keep the 3D template
+  * Create!
 
 Unity will open to the default window with a blank scene. The default window has a few main sections: 
 	1. Project / Console
@@ -136,17 +125,17 @@ Let’s dive into Unity by creating a simple 3D rocket game. At points, I will p
 
 ### Part 1
 Main Objectives:
-	* Basic Project / Scene Set-up
-	* Lighting
-	* GameObjects
-	* Meshes / Materials
-	* Individual Task: Creating a Rocket Ship
-	* Primitives
-	* Placeholder Art
-	* Prefabs
-	* Grouping
+  * Basic Project / Scene Set-up
+  * Lighting
+  * GameObjects
+  * Meshes / Materials
+  * Individual Task: Creating a Rocket Ship
+  * Primitives
+  * Placeholder Art
+  * Prefabs
+  * Grouping
 
-Creating the Project with a Github repository
+#### Creating the Project with a Github repository
 First, we will create a new Unity project and set it up with a Github repo.
 Create a new repository on github.
 Clone the repository onto the Desktop.
@@ -156,18 +145,18 @@ Select New.
 For the Location field, find the GitHub repository you just made. I.E. I would select /Users/sarahanson/Documents/Github/vrsc-unity-test as the location for my project.
 You can name your project whatever you like and keep it as Unity 3D.
 
-Individual Task
-Create a “Scenes” folder in the Assets folder
-Save the open, untitled scene as “Level 1”
+##### Individual Task
+  - Create a “Scenes” folder in the Assets folder
+  - Save the open, untitled scene as “Level 1”
 
 Now, head back over to Github Desktop and look at your repository for this project. There are a bunch of new files! Create a commit message and publish the repository.
 
 These are the basic steps for starting a game. It is a good idea to have different folders in the Assets folder for Scenes, Scripts, Materials, Prefabs, etc.
 
-Default Scene (Lighting)
+#### Default Scene (Lighting)
 If you take a look at the default GameObjects in your scene, you will see a Main Camera (with an Audio Listener) and Directional Light! We already covered the purpose of the main camera (seeing) and the audio listener (hearing). 
 
-Lighting
+#### Lighting
 The default directional light is an ambient light, meaning it illuminates all surfaces in the scene and doesn’t come from any specific source object. This means, you can move around the default light and it won’t change the scene lighting. However, rotating the directional light will change the scene lighting.
 
 Side note: Other types of lighting include, point lights (think of lamps or light bulbs), spotlights (like a point light but stops at a certain range), emissive materials (like a neon sign), and area lights (like directional light for a small area). Read more.
