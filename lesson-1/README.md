@@ -29,19 +29,18 @@ Unity is at the forefront of the XR market. In 2017, 90% of Samsung GearVR and 5
 This is because Unity has the most tools and hardware support from XR hardware suppliers, including Oculus and HoloLens. These XR suppliers use Unity as their game engine and provide SDKs (software development kits) for XR development in Unity.
 
 ### What are the best Unity resources?
-
-	* Unity User Manual
-	* Unity Scripting API
-	* Unity Forum
-	* Microsoft C# guide
-	* Google & the VRSC E-Board!
+  * Unity User Manual
+  * Unity Scripting API
+  * Unity Forum
+  * Microsoft C# guide
+  * Google & the VRSC E-Board!
 
 ## Unity + Github Set-up and Installation
 ### Github Installation / Set-up
 
 Prerequisites:
-	* Create a Github account
-	* Download Github Desktop
+  - Create a Github account
+  - Download Github Desktop
 
 Git is a version control system, or a platform that allows programmers to track, share, and save their code. Github is a service that extends Git and creates a simple interface for developers to use Git. Github is great for XR development because it allows you to share your application with team members and save old versions of the game in case you want to restore an old game version. Github Desktop is a desktop app that is easier to use than the typical Github command line tools, especially for Unity.
 
@@ -76,15 +75,25 @@ Create a new project
   * Create!
 
 Unity will open to the default window with a blank scene. The default window has a few main sections: 
+	
 	1. Project / Console
+		
 		a. Project: All the files in your project (like file explorer). You can drag and drop files into this area 		      to add files to your project. 
+		
 		b. Console: The window where you will see Debug messages, errors, etc when you run your project.
+	
 	2. Inspector: A detailed view of a selected component in the scene.
+	
 	3. Hierarchy: All the game objects in the scene and their relationships.
+	
 	4. Scene / Game
+		
 		a. Scene view: Shows the currently open scene
+		
 		b. Game view: Shows what the game looks like when you hit play. 
+		
 		*Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
+		
 		c. Toolbar: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into 		    each of these in more detail later on.
 
 You can move around each section for a workflow you like. This is my default workflow:
