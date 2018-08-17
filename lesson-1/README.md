@@ -1,9 +1,8 @@
 # Unity Lesson Guide
 
 **Curriculum:**
-	- What is Unity? Why use it? Best resources for Unity?
-	
-	* Unity + Github Set-up and Installation
+  * What is Unity? Why use it? Best resources for Unity?
+  * Unity + Github Set-up and Installation
 	
 	* Navigating the Unity Window and Folder Structure
 	
