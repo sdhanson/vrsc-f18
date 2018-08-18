@@ -142,8 +142,8 @@ Main Objectives:
 
 #### Creating the Project with a Github repository
 First, we will create a new Unity project and set it up with a Github repo.
-  1. Create a new repository on github.
-  2. Clone the repository onto the Desktop.
+  - Create a new repository on github.
+  - Clone the repository onto the Desktop.
 
 Now, launch Unity.
   - Select New.
@@ -156,10 +156,10 @@ Now, launch Unity.
 
 Now, head back over to Github Desktop and look at your repository for this project. There are a bunch of new files! Create a commit message and **publish the repository**.
 
-These are the basic steps for starting a game. It is a good idea to have different folders in the Assets folder for Scenes, Scripts, Materials, Prefabs, etc.
+These are the basic steps for starting a game. It is a good idea to have different folders in the **Assets** folder for **Scenes**, **Scripts**, **Materials**, **Prefabs**, etc.
 
 ### Default Scene (Lighting)
-If you take a look at the default GameObjects in your scene, you will see a Main Camera (with an Audio Listener) and Directional Light! We already covered the purpose of the main camera (seeing) and the audio listener (hearing). 
+If you take a look at the default GameObjects in your scene, you will see a **Main Camera** (with an Audio Listener) and **Directional Light**! We already covered the purpose of the main camera (seeing) and the audio listener (hearing). 
 
 #### Lighting
 The default directional light is an ambient light, meaning it illuminates all surfaces in the scene and doesn’t come from any specific source object. This means, you can move around the default light and it won’t change the scene lighting. However, rotating the directional light will change the scene lighting.
@@ -170,9 +170,9 @@ Side note: Other types of lighting include, point lights (think of lamps or ligh
 Our game is a rocket game. For this game we will need an environment, including a ground, a rocket, obstacles, etc.
 
 Let’s start by creating the ground!
-  1. Instantiate a cube GameObject. Rename this to something like “Terrain”.
-  2. Make sure to center the cube by setting the Position X Y Z to 0 0 0 or going to the Transform > Settings wheel > Reset in the cube’s Inspector.
-  3. The cube is too small to be our large ground, so let’s make the cube a bit larger by altering the scale to 100 30 100. Then, make the ground’s Y align with the origin by setting it down by -15. 
+  - Instantiate a **cube GameObject**. Rename this to something like “Terrain”.
+  - Make sure to center the cube by setting the Position X Y Z to 0 0 0 or going to the **Transform > Settings wheel > Reset** in the cube’s Inspector.
+  - The cube is too small to be our large ground, so let’s make the cube a bit larger by altering the **scale** to 100 30 100. Then, make the ground’s Y align with the origin by setting it down by -15. 
 
 You should now have a terrain like below:
 
@@ -186,15 +186,15 @@ Select, transform, rotate, scale, GUI, all
 Side note 2: Unity has a built in Terrain system that allows you to create really cool landscapes. If this sounds interesting to you, check it out. Otherwise, a plane is just fine for mimicking the ground.
 
 ### Meshes / Materials
-The key things to note about our new ground are the Mesh Collider, Mesh Renderer, and Mesh Filter components. 
+The key things to note about our new ground are the **Mesh Collider**, **Mesh Renderer**, and **Mesh Filter** components. 
 
-Meshes are like wireframes of an object. They give 3D objects their shape. The Mesh Filter component specifies the shape as one of Unity’s built in meshes, a cube. The Box Collider component is used by the Unity Physics Engine to specify the boundaries of the object and help with collisions and such. The Mesh Renderer component actually renders the object (makes it visible). 
+**Meshes** are like wireframes of an object. They give 3D objects their shape. The **Mesh Filter** component specifies the shape as one of Unity’s built in meshes, a cube. The **Box Collider** component is used by the Unity Physics Engine to specify the boundaries of the object and help with collisions and such. The **Mesh Renderer** component actually renders the object (makes it visible). 
 
 Also note, the terrain has a “default shader” attached to it.
 
  
 
-This shader component is empty--it has no values set and thus makes the terrain look white--and can be tweaked to create any type of look for the terrain. We could texture the terrain (i.e. give it a rocky look), tweak how it interacts with light, etc, but for now, we will simply change the color of the terrain.
+This **shader** component is empty--it has no values set and thus makes the terrain look white--and can be tweaked to create any type of look for the terrain. We could texture the terrain (i.e. give it a rocky look), tweak how it interacts with light, etc, but for now, we will simply change the color of the terrain.
 
 In order to change the color of the terrain, we will create a new material:
   - Go to **Assets > Create > Material**. 
@@ -218,12 +218,12 @@ We will be using primitives (Unity’s built in cube, sphere, place, etc) to mod
 When making a placeholder primitive art form, it is important to group the individual primitives (aka a cube representing a rocket body, a capsule representing the rocket nose, etc) that compose the overall art form (aka a rocket ship) under an empty game object and name everything appropriately, like so: 
 
 
-This is a nice example of Unity’s hierarchy. We can make a GameObject a child of a parent GameObject. Child objects inherit the position and transform of the parent object, so when the child’s transform is at 0 0 0, it is at the parent object’s position.
+This is a nice example of Unity’s hierarchy. We can make a GameObject a child of a parent GameObject. Child objects inherit the **position** and **transform** of the parent object, so when the child’s transform is at 0 0 0, it is at the parent object’s position.
 
 In this example, “Pretty Rocket Ship” is an empty GameObject, while the child Rocket Body is a cube. The children, “Starboard Booster” and “Port Booster”, are empty GameObjects with sphere “Tail” components nested underneath. 
 
 ### Prefabs
-In this example the GameObjects are blue! This means that they are prefabs. A prefab is a template for an object. So if you make a cube, scale it, rotate it, give it a material, and you want to use that exact set up again you can 1. duplicate the cube OR 2. create a prefab. To create a prefab, you drag the cube from the hierarchy to the assets folder. Then, you can use the template by dragging the prefab from the assets folder to the hierarchy. * You can make overall changes to prefabs that apply to every single prefab, which we will go into later *
+In this example the GameObjects are blue! This means that they are **prefabs**. A **prefab** is a template for an object. So if you make a cube, scale it, rotate it, give it a material, and you want to use that exact set up again you can 1. duplicate the cube OR 2. create a prefab. To create a prefab, you drag the cube from the hierarchy to the assets folder. Then, you can use the template by dragging the prefab from the assets folder to the hierarchy. * You can make overall changes to prefabs that apply to every single prefab, which we will go into later *
 
 Side note: **Meshes should be kept away from the top level**. Aka each individual component (tail, rocket body) should have a mesh, but empty parent objects should not.
 
@@ -265,9 +265,9 @@ Here is a great description of a physics system from the Unity Manual:
 “To have convincing physical behaviour, an object in a game must accelerate correctly and be affected by collisions, gravity and other forces. Unity’s built-in physics engines provide components that handle the physical simulation for you. With just a few parameter settings, you can create objects that behave passively in a realistic way (ie, they will be moved by collisions and falls but will not start moving by themselves). By controlling the physics from scripts, you can give an object the dynamics of a vehicle, a machine, or even a piece of fabric.”
 
 Key words:
-  * Collisions: A collision occurs when the physics engine detects that the colliders of two GameObjects make contact or overlap, when at least one has a rigidbody component and is in motion.
-  * Component: A functional part of a GameObject
-  * Scripts: A piece of code that allows you to create your own Components, trigger game events, modify Component properties over time and respond to user input in any way you like
+  1. Collisions: A collision occurs when the physics engine detects that the colliders of two GameObjects make contact or overlap, when at least one has a rigidbody component and is in motion.
+  2. Component: A functional part of a GameObject
+  3. Scripts: A piece of code that allows you to create your own Components, trigger game events, modify Component properties over time and respond to user input in any way you like
 
 The key components in the Unity physics system are:
   1. **Rigidbody**: A **Rigidbody** is the main **component** that enables physical behaviour for a **GameObject**. With a Rigidbody attached, the object will immediately respond to gravity. If one or more **Collider** components are also added, the **GameObject** is moved by incoming **collisions**
@@ -278,12 +278,12 @@ We will see these in detail and in our own game, so don’t worry if the physics
 ### Adding Physics to our Game
 We want to make the rocket move! To do this, we will enable physics behavior on our rocket. Then, we can move the rocket by adding forces and have it respond to gravity like an actual rocket. As we read above, the **Rigidbody** component enables physics behavior for a GameObject. 
 
-1. Add a rigidbody to the top level of the rocket ship.
-  a. Note: The rocket ship has been given a mass, drag (how syrupy the air is), and angular drag.
-  b. Testing: To test the physics, pull your rocket ship off of the ground/platform and press play. The rocket should fall to the ground. If it falls through the ground or platform, add a collider to the ground or platform.
-  c. Note: The collider tells Unity that something is there and we can’t go through it. In fact, we don’t need a mesh (external look) for things to collide. You could make an invisible box with a box collider and it will collide with the rocket ship.
-2. Add a script “Rocket” to the top level of the rocket ship. 
-  a. We will use this script to control the motion of the rocket. 
+  - Add a **rigidbody** to the top level of the rocket ship.
+    - Note: The rocket ship has been given a **mass**, **drag** (how syrupy the air is), and **angular drag**.
+    - Testing: To test the physics, pull your rocket ship off of the ground/platform and press play. The rocket should fall to the ground. If it falls through the ground or platform, add a **collider** to the ground or platform.
+    - Note: The collider tells Unity that something is there and we can’t go through it. In fact, we don’t need a mesh (external look) for things to collide. You could make an invisible box with a box collider and it will collide with the rocket ship.
+  - Add a **script** “Rocket” to the top level of the rocket ship. 
+    - We will use this script to control the motion of the rocket. 
 
 ### Scripting
 *Important to get your naming right*
@@ -298,7 +298,7 @@ Quick overview of scripting: The default script is derived from the base class, 
 5. OnCollisionEnter( ): fired when the collider or rigidbody of the GameObject the script is attached to collides with another collider or rigidbody
 
 ### Rocket Script
-The first motion we are going to add to our rocket is the ability to thrust upward [space bar] and rotate left [A] and right [D]. 
+The first motion we are going to add to our rocket is the ability to thrust upward (space bar) and rotate left (A) and right (D). 
 
 <script src="https://gist.github.com/sdhanson/12c354bc3ba1147dd705a4e22a16c8ce.js"></script>
 
@@ -319,7 +319,8 @@ Now, it would be really cool if we could control the speed of our thrust and rot
 We will walk through the code above, which is explained in the code comments.
 
 ### Your Turn
-Change the mass of the RigidBody so it is back at 1, and change the rcsThrust and shipThrust variables in the Inspector so that your rocket ship moves like it did before.
+  - Change the **mass** of the RigidBody so it is back at 1
+  - Change the **rcsThrust** and **shipThrust** variables in the Inspector so that your rocket ship moves like it did before.
 
 Side Note: If you change a value while playing the game, your changes are lost when you stop playing!
 
@@ -331,18 +332,18 @@ Side Note: If you change a value while playing the game, your changes are lost w
 ### Collisions
 #### Your Turn
 Create a field of obstacles for your rocket to maneuver around. 
-  - Create one primitive obstacle.
+  - Create one **primitive obstacle**.
   - Name it “Obstacle” or something of that sort
-  - Add a material.
-  - Prefab the obstacle.
+  - Add a **material**.
+  - **Prefab** the obstacle.
   - Use the prefab to create a set up of different obstacles
-  - Create a second platform, the “landing platform” at the end of the series of obstacles, give it a material, and create a new prefab “landing platform”
+  - Create a **second platform**, the “landing platform” at the end of the series of obstacles, give it a material, and create a new prefab “landing platform”
   - Move the camera around so you get a good view of the game in the Game view, like below
 
 
 
 #### Tags
-From the Unity Manual: A tag is a reference word you can attach to one or more GameObjects. It is used mostly for scripting purposes as they are useful triggers for Colliders in scripts; they need to work out whether the player is interacting with an enemy, a prop, or a collectable, for example.
+From the Unity Manual: A **tag** is a reference word you can attach to one or more GameObjects. It is used mostly for scripting purposes as they are useful triggers for Colliders in scripts; they need to work out whether the player is interacting with an enemy, a prop, or a collectable, for example.
 
 We will use tags to tell us if the rocket has collided with a good object (the start platform), has finished the level (the landing pad), or should die (anything else).
 
@@ -356,7 +357,7 @@ To create a tag for the friendly starting platform:
 Tag the landing pad as “Finish” 
 
 ### Using Tags + Collisions in a Script
-To get the basic feel of how to use tags + collisions in a script, we will simply add a function to our script that prints out “friendly” when we collide with a friendly tagged object, “finish” when we collide with a finish tagged object, and “dead” when we collide with anything else.
+To get the basic feel of how to use **tags + collisions** in a script, we will simply add a function to our script that prints out “friendly” when we collide with a friendly tagged object, “finish” when we collide with a finish tagged object, and “dead” when we collide with anything else.
 
 <script src="https://gist.github.com/sdhanson/4fde37c5d196b32ee3dd7e671390f741.js"></script>
 
@@ -384,10 +385,10 @@ With Level 1 open go to **File > Build Settings > Add open scenes**.
 
 Now, the scenes we want in our game are in the **Scenes in Build** and are checkmarked with an index next to them. We will later access these scenes using their indices in our Rocket script.
 
-Also note, the build settings is where you specify information about what device you want to build your platform on. This is important for virtual reality because we will have to install some APKs that give us access to certain headsets.
+Also note, the **build settings** is where you specify information about what device you want to build your platform on. This is important for virtual reality because we will have to install some APKs that give us access to certain headsets.
 
 ### Scenes + Scripting
-Let’s implement the actual game flow. Earlier, we decided to print “friendly,” “finish,” or “dead” based on the tags on GameObjects the rocket collides with. Now, let’s add functionality to actually transition the scene with the flow we described above.
+Let’s implement the actual **game flow**. Earlier, we decided to print “friendly,” “finish,” or “dead” based on the tags on GameObjects the rocket collides with. Now, let’s add functionality to actually transition the scene with the flow we described above.
 
 <script src="https://gist.github.com/sdhanson/c2cc706b7df4b067a4c5afb55b980423.js"></script>
 
@@ -407,9 +408,9 @@ Unity was trying to make the lighting for your scene at runtime...and failing. N
 ### Coroutines
 When you play your game, you should see that when a scene transition is triggered, the next scene loads immediately. This abrupt change is not the best game experience. We will now use coroutines to delay the scene transition by 1 second.
 
-Unity functions act sequentially—Unity does not move to the next function until another function ends, basically stopping all other functionality. A coroutine is a function that has the ability to pause execution and return control to Unity and then continue where it left off the following frame.
+Unity functions act sequentially—Unity does not move to the next function until another function ends, basically stopping all other functionality. A **coroutine** is a function that has the ability to pause execution and return control to Unity and then continue where it left off the following frame.
 
-FixedUpdate is called every 0.02 seconds, so if we delay a function by 1 second in FixedUpdate, the function will never actually execute! However, we can **start** a coroutine in FixedUpdate, and then let the coroutine function run separately from FixedUpdate.
+**FixedUpdate** is called every 0.02 seconds, so if we delay a function by 1 second in FixedUpdate, the function will never actually execute! However, we can **start** a coroutine in FixedUpdate, and then let the coroutine function run separately from FixedUpdate.
 
 Coroutines have unusual syntax. Remember—they are functions, and they are declared like so:
 
@@ -428,18 +429,18 @@ Let’s see this in practice in our code.
 
 
 ### Particle Systems
-Finally, we will add some fun particle effects to our game. Unity provides a built in particle system that allows us to emit different “particles” from GameObjects. These “particles” are 2D default objects that we can customize with speed, color, texture, etc. They are emitted in 3D but they are 2D objects that are always oriented towards the canvas, so they always look like squares. 
+Finally, we will add some fun **particle effects** to our game. Unity provides a built in particle system that allows us to emit different “particles” from GameObjects. These “particles” are 2D default objects that we can customize with speed, color, texture, etc. They are emitted in 3D but they are 2D objects that are always oriented towards the canvas, so they always look like squares. 
 
-Our game will utilize three particles systems for different states of our game: a particles system when we are thrusting, a particles system when we collide with an obstacle and die, and a particle system for when we win a level! We will attach particle system GameObjects to our Rocket and trigger these particle systems from code.
+Our game will utilize three particles systems for different states of our game: a particles system when we are thrusting, a particles system when we collide with an obstacle and die, and a particle system for when we win a level! We will attach particle system GameObjects to our Rocket and **trigger** these particle systems from code.
 
 Before we dive into how to create and use a particle system, we will take a look at enumerations.
 
 ### Enumerations
-Enumerations (or enums) are custom types that we create in our script. They are a collection of words that are usually used to indicate different states of our game.
+**Enumerations (or enums)** are custom types that we create in our script. They are a collection of words that are usually used to indicate different states of our game.
 For example, we might have an enumeration, like:
 
-enum State { Alive, Dead, Zombie };
-State state = State.Alive;
+	enum State { Alive, Dead, Zombie };
+	State state = State.Alive;
 
 Then, we will switch our game functions depending on if we are alive, dead, or zombie, like so:
 
@@ -460,12 +461,15 @@ Then, we will switch our game functions depending on if we are alive, dead, or z
 In our game we will have three states, Alive, Dying, and Waiting, and these states will help us determine what movements are available to the player and what particle effects should be playing.
 
 ### Create and Use a Particle System
-We have provided a unity package of the particle system you should download right here. Download this package, move it to your Assets folder, and then open the package in Unity. You will now have three particle systems prefabs. Feel free to move them to your Prefabs folder. 
+We have provided a unity package of the particle system you should download right here. 
+  - Download this package
+  - Move the package to your **Assets** folder
+  - Open the package in Unity. You will now have three particle systems prefabs. 
+  - Feel free to move them to your **Prefabs** folder. 
+  - Attach all three particle systems to the rocket ship. 
 
-Attach all three particle systems to the rocket ship. 
 
-
-Take a look at one of the particle systems. Note the particle systems are GameObjects, and they are child GameObjects of the Rocket--the Rocket itself is not a particle system. In order to make a particle system GameObject, simply attach a particle system component to an empty GameObject. In the particle system component, you can see all sorts of specializations. The most important thing to note is that play on awake has been disabled. This means, we must trigger the particle system to play in our code, which we will do below.
+Take a look at one of the particle systems. Note the particle systems are **GameObjects**, and they are child GameObjects of the Rocket--the Rocket itself is not a particle system. In order to make a particle system GameObject, simply **vattach a particle system component to an empty GameObject**. In the particle system component, you can see all sorts of specializations. The most important thing to note is that play on awake has been disabled. This means, we must trigger the particle system to play in our code, which we will do below.
 
 
 ### What’s Next?
