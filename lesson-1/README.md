@@ -20,46 +20,45 @@
 
 “Unity is the ultimate game development platform” and game engine. A game engine is a software development environment designed for people to build video games. Basically, Unity is a tool that provides us a simple(ish) interface to easily create 2D and 3D applications. Unity uses C# and/or JavaScript.
 
-Another popular game engine is Unreal Engine.
+Another popular game engine is [Unreal Engine](https://en.wikipedia.org/wiki/Unreal_Engine).
 
 ### Why use it?
 
-Unity is at the forefront of the XR market. In 2017, 90% of Samsung GearVR and 53% of Oculus Rift games were made using Unity. 
+Unity is at the forefront of the XR market. In 2017, 90% of Samsung GearVR and 53% of Oculus Rift games were made using [Unity](https://blog.instabug.com/2017/12/game-engines/). 
 
 This is because Unity has the most tools and hardware support from XR hardware suppliers, including Oculus and HoloLens. These XR suppliers use Unity as their game engine and provide SDKs (software development kits) for XR development in Unity.
 
 ### What are the best Unity resources?
-  * Unity User Manual
-  * Unity Scripting API
-  * Unity Forum
-  * Microsoft C# guide
+  * [Unity User Manual](https://docs.unity3d.com/Manual/UnityManual.html)
+  * [Unity Scripting API](https://docs.unity3d.com/2018.1/Documentation/ScriptReference/index.html)
+  * [Unity Forum](https://forum.unity.com/forums/)
+  * [Microsoft C# guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
   * Google & the VRSC E-Board!
 
 ## Unity + Github Set-up and Installation
 ### Github Installation / Set-up
 
 Prerequisites:
-  - Create a Github account
-  - Download Github Desktop
+  - Create a [Github account](https://github.com/)
+  - Download [Github Desktop](https://desktop.github.com/)
 
 Git is a version control system, or a platform that allows programmers to track, share, and save their code. Github is a service that extends Git and creates a simple interface for developers to use Git. Github is great for XR development because it allows you to share your application with team members and save old versions of the game in case you want to restore an old game version. Github Desktop is a desktop app that is easier to use than the typical Github command line tools, especially for Unity.
 
-**With Github, you can easily clone (aka download) repositories (aka an overarching project folder), make changes to the code, and commit (aka save) your changes to the code base. Check out this guide and get comfortable with Github.**
+**With Github, you can easily clone (aka download) repositories (aka an overarching project folder), make changes to the code, and commit (aka save) your changes to the code base. Check out [this guide](https://guides.github.com/activities/hello-world/) and get comfortable with Github.**
 
 We will be using Github to provide resources through the vrsc-f18 repository and for version control during development. 
 
 Now, let’s fork the vrsc-f18 repository. A fork is a copy of a repository; you can change the code in the forked version without affecting the original repository.
   - Log into Github
-  - Navigate to the vrsc-f18 repo
+  - Navigate to the [vrsc-f18 repo](https://github.com/sdhanson/vrsc-f18)
   - Click “fork” in the upper right corner
 
 That’s it. When you want to use/change the code from the vrsc-f18 repo, be sure to use your forked version.
 
 ### Unity Installation / Set-Up
-  - Download Unity 2018.2.1 from this page.
+  - Download Unity 2018.2.1 from [this page](https://unity3d.com/get-unity/download/archive).
   
   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="403" height="293">
-
 
   Note: The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
 
@@ -103,7 +102,7 @@ You can move around each section for a workflow you like. This is my default wor
 
   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/workflow.png" width="650" height="424">
 
-Unity has opened us up to a default, untitled scene. Here is a great description of scenes from the Microsoft Unity guide:
+Unity has opened us up to a default, untitled scene. Here is a great description of scenes from the [Microsoft Unity guide](https://msdn.microsoft.com/en-us/magazine/dn759441.aspx):
 
 “Everything that runs in your game exists in a scene. When you package your game for a platform, the resulting game is a collection of one or more scenes, plus any platform-­dependent code you add. You can have as many scenes as you want in a project. A scene can be thought of as a level in a game, though you can have multiple levels in one scene file by just moving the player/camera to different points in the scene. When you download third-party packages or even sample games from the asset store, you typically must look for the scene files in your project to open. A scene file is a single file that contains all sorts of metadata about the resources used in the project for the current scene and its properties. It’s important to save a scene often by pressing Ctrl+S during development, just as with any other tool. 
 
@@ -182,7 +181,7 @@ If you take a look at the default GameObjects in your scene, you will see a **Ma
 #### Lighting
 The default directional light is an ambient light, meaning it illuminates all surfaces in the scene and doesn’t come from any specific source object. This means, you can move around the default light and it won’t change the scene lighting. However, rotating the directional light will change the scene lighting.
 
-Side note: Other types of lighting include, point lights (think of lamps or light bulbs), spotlights (like a point light but stops at a certain range), emissive materials (like a neon sign), and area lights (like directional light for a small area). Read more.
+Side note: Other types of lighting include, point lights (think of lamps or light bulbs), spotlights (like a point light but stops at a certain range), emissive materials (like a neon sign), and area lights (like directional light for a small area). [Read more](https://docs.unity3d.com/Manual/Lighting.html).
 
 ### Creating Our Game: The First GameObject
 Our game is a rocket game. For this game we will need an environment, including a ground, a rocket, obstacles, etc.
@@ -196,13 +195,13 @@ You should now have a terrain like below:
 
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/terrain.png" width="660" height="454">
 
-Side Note: As we transform GameObjects (i.e. rotate, change the position, scale, etc) you can use the Inspector to make these changes, Unity hotkeys, or the Toolbar:
+Side Note: As we transform GameObjects (i.e. rotate, change the position, scale, etc) you can use the Inspector to make these changes, [Unity hotkeys](https://docs.unity3d.com/Manual/UnityHotkeys.html), or the Toolbar:
 
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/toolbar.png" width="386" height="44">
 
 Select, transform, rotate, scale, GUI, all
 
-Side note 2: Unity has a built in Terrain system that allows you to create really cool landscapes. If this sounds interesting to you, check it out. Otherwise, a plane is just fine for mimicking the ground.
+Side note 2: Unity has a built in [Terrain system](https://docs.unity3d.com/Manual/script-Terrain.html) that allows you to create really cool landscapes. If this sounds interesting to you, check it out. Otherwise, a plane is just fine for mimicking the ground.
 
 ### Meshes / Materials
 The key things to note about our new ground are the **Mesh Collider**, **Mesh Renderer**, and **Mesh Filter** components. 
@@ -212,7 +211,6 @@ The key things to note about our new ground are the **Mesh Collider**, **Mesh Re
 Also note, the terrain has a “default shader” attached to it.
 
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/shader.png" width="170" height="300">
-
 
 This **shader** component is empty--it has no values set and thus makes the terrain look white--and can be tweaked to create any type of look for the terrain. We could texture the terrain (i.e. give it a rocky look), tweak how it interacts with light, etc, but for now, we will simply change the color of the terrain.
 
@@ -246,7 +244,7 @@ This is a nice example of Unity’s hierarchy. We can make a GameObject a child 
 In this example, “Pretty Rocket Ship” is an empty GameObject, while the child Rocket Body is a cube. The children, “Starboard Booster” and “Port Booster”, are empty GameObjects with sphere “Tail” components nested underneath. 
 
 ### Prefabs
-In this example the GameObjects are blue! This means that they are **prefabs**. A **prefab** is a template for an object. So if you make a cube, scale it, rotate it, give it a material, and you want to use that exact set up again you can 1. duplicate the cube OR 2. create a prefab. To create a prefab, you drag the cube from the hierarchy to the assets folder. Then, you can use the template by dragging the prefab from the assets folder to the hierarchy. * You can make overall changes to prefabs that apply to every single prefab, which we will go into later *
+In this example the GameObjects are blue! This means that they are [**prefabs**](https://docs.unity3d.com/Manual/Prefabs.html). A **prefab** is a template for an object. So if you make a cube, scale it, rotate it, give it a material, and you want to use that exact set up again you can 1. duplicate the cube OR 2. create a prefab. To create a prefab, you drag the cube from the hierarchy to the assets folder. Then, you can use the template by dragging the prefab from the assets folder to the hierarchy. * You can make overall changes to prefabs that apply to every single prefab, which we will go into later *
 
 Side note: **Meshes should be kept away from the top level**. Aka each individual component (tail, rocket body) should have a mesh, but empty parent objects should not.
 
@@ -313,7 +311,7 @@ We want to make the rocket move! To do this, we will enable physics behavior on 
 ### Scripting
 *Important to get your naming right*
 Open the Rocket script by double clicking on it. The script should open in MonoDevelop--Unity’s built in editor--unless you configured a different default editor.
-The Rocket script has a default structure. Read more about it in the Unity manual.
+The Rocket script has a default structure. Read more about it in the [Unity manual](https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html).
 
 Quick overview of scripting: The default script is derived from the base class, MonoBehaviour, which makes sure the script will run in the game loop and gives us added built in functionality. Unity provides predetermined methods, including:
 1. Start( ): gets called once right before the script gets the first update
