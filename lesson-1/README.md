@@ -5,15 +5,6 @@
   * Unity + Github Set-up and Installation
   * Navigating the Unity Window and Folder Structure
   * Mini-project: Rocket Booster
-  * Scene Set-up
-  * Game-Objects / Pre-fabs
-  * Physics System and Colliders
-  * Unity + Github
-  * Hotkeys
-  * Computer Input
-  * Lighting and Rendering
-  * Enumerations
-  * +++
 
 ## Unity Basics
 ### What is Unity?
@@ -57,8 +48,9 @@ That’s it. When you want to use/change the code from the vrsc-f18 repo, be sur
 
 ### Unity Installation / Set-Up
   - Download Unity 2018.2.1 from [this page](https://unity3d.com/get-unity/download/archive).
-  
-  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="403" height="293">
+  <p align="center">
+    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="403" height="293">
+  </p>
 
   Note: The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
 
@@ -104,7 +96,7 @@ You can move around each section for a workflow you like. This is my default wor
 
 Unity has opened us up to a default, untitled scene. Here is a great description of scenes from the [Microsoft Unity guide](https://msdn.microsoft.com/en-us/magazine/dn759441.aspx):
 
-“Everything that runs in your game exists in a scene. When you package your game for a platform, the resulting game is a collection of one or more scenes, plus any platform-­dependent code you add. You can have as many scenes as you want in a project. A scene can be thought of as a level in a game, though you can have multiple levels in one scene file by just moving the player/camera to different points in the scene. When you download third-party packages or even sample games from the asset store, you typically must look for the scene files in your project to open. A scene file is a single file that contains all sorts of metadata about the resources used in the project for the current scene and its properties. It’s important to save a scene often by pressing Ctrl+S during development, just as with any other tool. 
+“Everything that runs in your game exists in a scene. When you package your game for a platform, the resulting game is a collection of one or more scenes, plus any platform-dependent code you add. You can have as many scenes as you want in a project. A scene can be thought of as a level in a game, though you can have multiple levels in one scene by just moving the player/camera to different points in the scene. When you download third-party packages or even sample games from the asset store, you typically must look for the scene files in your project to open. A scene file is a single file that contains all sorts of metadata about the resources used in the project for the current scene and its properties. It’s important to save a scene often by pressing Ctrl+S during development, just as with any other tool. 
 
 Typically, Unity opens the last scene you’ve been working on, although sometimes when Unity opens a project it creates a new empty scene and you have to go find the scene in your project explorer. This can be pretty confusing for new users, but it’s important to remember if you happen to open up your last project and wonder where all your work went! Relax, you’ll find the work in a scene file you saved in your project.
 
