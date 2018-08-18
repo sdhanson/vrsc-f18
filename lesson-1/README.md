@@ -357,6 +357,7 @@ Side Note: If you change a value while playing the game, your changes are lost w
 ### Example: My Rocket Ship Values
 
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values.png "Rocket Values")
+  ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values2.png "Rocket Values")
 
 
 ### Collisions
