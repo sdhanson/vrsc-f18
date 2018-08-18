@@ -60,9 +60,9 @@ That’s it.
 ### Basic Structure of a Unity Project
 
 Now, we will explore the Unity window/interface and project structure. 
-
+<p align="center">
   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/new.png" width="403" height="293">
-
+</p>
 Create a new project
   - Open Unity and select “New”
   - Name the project
@@ -85,15 +85,15 @@ Unity will open to the default window with a blank scene. The default window has
     
     b. **Game view**: Shows what the game looks like when you hit play. 
     *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
-    
+  <p align="center">  
       <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/tint.png" width="400" height="219">
-    
+  </p>
     c. **Toolbar**: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into each of these in more detail later on.
 
 You can move around each section for a workflow you like. This is my default workflow:
-
+<p align="center">
   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/workflow.png" width="650" height="424">
-
+</p>
 Unity has opened us up to a default, untitled scene. Here is a great description of scenes from the [Microsoft Unity guide](https://msdn.microsoft.com/en-us/magazine/dn759441.aspx):
 
 “Everything that runs in your game exists in a scene. When you package your game for a platform, the resulting game is a collection of one or more scenes, plus any platform-dependent code you add. You can have as many scenes as you want in a project. A scene can be thought of as a level in a game, though you can have multiple levels in one scene by just moving the player/camera to different points in the scene. When you download third-party packages or even sample games from the asset store, you typically must look for the scene files in your project to open. A scene file is a single file that contains all sorts of metadata about the resources used in the project for the current scene and its properties. It’s important to save a scene often by pressing Ctrl+S during development, just as with any other tool. 
@@ -105,14 +105,14 @@ In a scene, you can’t see anything without a camera and you can’t hear anyth
 And, here’s a great description of Unity GameObjects from the Microsoft guide:
 
 “Virtually everything in your scene is a GameObject. Think of System.Object in the .NET Framework. Almost all types derive from it. The same concept goes for GameObject. It’s the base class for all objects in your Unity scene. All of the objects shown below derive from a GameObject. 
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/graph.jpg" width="300" height="300">
-
+</p>
 
 A GameObject is pretty simple as it pertains to the Inspector window. You can see in the figure below an empty GameObject that was added to a scene; note its properties in the Inspector. GameObjects by default have no visual properties except the widget Unity shows when you highlight the object. At this point, it’s simply a fairly empty object.
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/gameobject.png" width="400" height="110">
-
+</p>
  
 A GameObject has a Name, a Tag, a Layer and the Transform (probably the most important property of all).
 
@@ -121,14 +121,14 @@ The Transform property is simply the position, rotation and scale of any GameObj
 ### Components
 You add functionality to GameObjects by adding Components. Everything you add is a Component and they all show up in the Inspector window. There are MeshRender and SpriteRender Components; Components for audio and camera functionality; physics-related Components (colliders and rigidbodies), particle systems, path-finding systems, third-party custom Components, and more. You use a script Component to assign code to an object. Components are what bring your GameObjects to life by adding functionality. You can also add scripts to GameObjects, which can define certain functionality for the GameObject.”
 Here’s an example of the Unity window with an open scene from the Sharp Shooter Tutorial:
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/sharpshooter.png" width="660" height="454">
-
+</p>
 In the Hierarchy, we see all of the GameObjects for the Level 1 Scene. The Inspector shows us the details for the selected object, the main camera. In the Project tab, we see all of the imported assets for the project, including audio, textures, scripts, etc--everything we need to create this scene/level.
 While we only see the Assets folder in the Project window, the Unity project structure also includes Library, ProjectSettings, and Temp folders. This can be seen in the folder where you saved your Unity Project. For example, my Intro project is like this:
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/finder.png" width="383" height="219">
-
+</p>
 The Library folder holds metadata for assets. The ProjectSettings folder contains specific configuration settings for your project. The Temp folder is only present while the Unity Project is open; it contains temp files Unity needs to build your project as you work on it.
 
 While the project structure is not that important to understand for development, it will be helpful to know the basics when we use Github with Unity.
@@ -184,13 +184,13 @@ Let’s start by creating the ground!
   - The cube is too small to be our large ground, so let’s make the cube a bit larger by altering the **scale** to 100 30 100. Then, make the ground’s Y align with the origin by setting it down by -15. 
 
 You should now have a terrain like below:
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/terrain.png" width="660" height="454">
-
+</p>
 Side Note: As we transform GameObjects (i.e. rotate, change the position, scale, etc) you can use the Inspector to make these changes, [Unity hotkeys](https://docs.unity3d.com/Manual/UnityHotkeys.html), or the Toolbar:
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/toolbar.png" width="386" height="44">
-
+</p>
 Select, transform, rotate, scale, GUI, all
 
 Side note 2: Unity has a built in [Terrain system](https://docs.unity3d.com/Manual/script-Terrain.html) that allows you to create really cool landscapes. If this sounds interesting to you, check it out. Otherwise, a plane is just fine for mimicking the ground.
@@ -201,9 +201,9 @@ The key things to note about our new ground are the **Mesh Collider**, **Mesh Re
 **Meshes** are like wireframes of an object. They give 3D objects their shape. The **Mesh Filter** component specifies the shape as one of Unity’s built in meshes, a cube. The **Box Collider** component is used by the Unity Physics Engine to specify the boundaries of the object and help with collisions and such. The **Mesh Renderer** component actually renders the object (makes it visible). 
 
 Also note, the terrain has a “default shader” attached to it.
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/shader.png" width="170" height="300">
-
+</p>
 This **shader** component is empty--it has no values set and thus makes the terrain look white--and can be tweaked to create any type of look for the terrain. We could texture the terrain (i.e. give it a rocky look), tweak how it interacts with light, etc, but for now, we will simply change the color of the terrain.
 
 In order to change the color of the terrain, we will create a new material:
@@ -211,10 +211,9 @@ In order to change the color of the terrain, we will create a new material:
   - You will see a **New Material** asset is created in your **Assets** folder. Change the **albedo** on the asset to a nice ground-ish color.
   - Rename the material to something like “ground” 
   - Drag the asset onto the terrain **GameObject** 
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/material.png" width="660" height="404">
-
-
+</p>
 Each material comes with a standard shader; when you add a new material to your GameObject, this shader will replace the old default shader on your GameObject. You can fiddle around with the other settings on the shader, but, for now, know this is the easiest way to give colors and textures to your GameObjects.
 
 Great! So the ground is set.
@@ -227,10 +226,9 @@ We will be using primitives (Unity’s built in cube, sphere, place, etc) to mod
 
 ### Hierarchy of Placeholder Art
 When making a placeholder primitive art form, it is important to group the individual primitives (aka a cube representing a rocket body, a capsule representing the rocket nose, etc) that compose the overall art form (aka a rocket ship) under an empty game object and name everything appropriately, like so: 
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/hierarchy.png" width="499" height="500">
-
-
+</p>
 This is a nice example of Unity’s hierarchy. We can make a GameObject a child of a parent GameObject. Child objects inherit the **position** and **transform** of the parent object, so when the child’s transform is at 0 0 0, it is at the parent object’s position.
 
 In this example, “Pretty Rocket Ship” is an empty GameObject, while the child Rocket Body is a cube. The children, “Starboard Booster” and “Port Booster”, are empty GameObjects with sphere “Tail” components nested underneath. 
@@ -253,9 +251,9 @@ It is important to note that you can “snap” GameObjects into place with cont
 Don’t forget to use the toolbar or Inspector to reset your GameObjects to the origin, scale the objects, and move them however you want.
 
 ### Example Rocket (from yours truly):
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/rocket.png" width="328" height="314">
-
+</p>
 Alright, so now we all have a rocket ship! Yay!
 
 ### Next Steps
@@ -323,9 +321,9 @@ We will walk through the code above, which is explained in the code comments.
 Play the game! If your rocket ship doesn’t move, try and lower the mass of the ship until it moves at a speed you like.
 
 Our rocket is somewhat unstable, so freeze the position in the z direction and the rotation in the x and y direction on the rocket’s RigidBody.
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/constraints.png" width="556" height="124">
-
+</p>
 ### Controlling the Rocket Speed
 Now, it would be really cool if we could control the speed of our thrust and rotation. Let’s add some variables to do just that.
 
@@ -340,10 +338,10 @@ We will walk through the code above, which is explained in the code comments.
 Side Note: If you change a value while playing the game, your changes are lost when you stop playing!
 
 ### Example: My Rocket Ship Values
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values.png" width="300" height="300">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values2.png" width="280" height="70">
-
+</p>
 
 ### Collisions
 #### Your Turn
@@ -355,9 +353,9 @@ Create a field of obstacles for your rocket to maneuver around.
   - Use the prefab to create a set up of different obstacles
   - Create a **second platform**, the “landing platform” at the end of the series of obstacles, give it a material, and create a new prefab “landing platform”
   - Move the camera around so you get a good view of the game in the Game view, like below:
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png" width="660" height="404">
-
+</p>
 #### Tags
 From the Unity Manual: A **tag** is a reference word you can attach to one or more GameObjects. It is used mostly for scripting purposes as they are useful triggers for Colliders in scripts; they need to work out whether the player is interacting with an enemy, a prop, or a collectable, for example.
 
@@ -396,9 +394,9 @@ Now, let’s implement a game flow and link the two levels. Our game flow will b
 To switch scenes in Unity, we can use the Unity SceneManager which allows us to manage at during run time. The SceneManager gives us easy access to scenes that are in our build through their index. This means, we have to add Level 1 and Level 2 to our build scenes. 
 
 With Level 1 open go to **File > Build Settings > Add open scenes**. 
-
+<p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/build.png" width="250" height="400">
-
+</p>
 Now, the scenes we want in our game are in the **Scenes in Build** and are checkmarked with an index next to them. We will later access these scenes using their indices in our Rocket script.
 
 Also note, the **build settings** is where you specify information about what device you want to build your platform on. This is important for virtual reality because we will have to install some APKs that give us access to certain headsets.
