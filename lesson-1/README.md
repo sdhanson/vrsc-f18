@@ -330,7 +330,7 @@ Quick overview of scripting: The default script is derived from the base class, 
 ### Rocket Script
 The first motion we are going to add to our rocket is the ability to thrust upward (space bar) and rotate left (A) and right (D). 
 
-<script src="https://gist.github.com/sdhanson/12c354bc3ba1147dd705a4e22a16c8ce.js"></script>
+[Rocket Script](https://gist.github.com/sdhanson/12c354bc3ba1147dd705a4e22a16c8ce.js)
 
 We will walk through the code above, which is explained in the code comments.
 
@@ -344,7 +344,7 @@ Our rocket is somewhat unstable, so freeze the position in the z direction and t
 ### Controlling the Rocket Speed
 Now, it would be really cool if we could control the speed of our thrust and rotation. Let’s add some variables to do just that.
 
-<script src="https://gist.github.com/sdhanson/b6640b5d33066687524f61cdcb40dd38.js"></script>
+[Rocket Script](https://gist.github.com/sdhanson/b6640b5d33066687524f61cdcb40dd38.js)
 
 We will walk through the code above, which is explained in the code comments.
 
@@ -374,7 +374,6 @@ Create a field of obstacles for your rocket to maneuver around.
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png "Level 1")
 
 
-
 #### Tags
 From the Unity Manual: A **tag** is a reference word you can attach to one or more GameObjects. It is used mostly for scripting purposes as they are useful triggers for Colliders in scripts; they need to work out whether the player is interacting with an enemy, a prop, or a collectable, for example.
 
@@ -392,7 +391,7 @@ Tag the landing pad as “Finish”
 ### Using Tags + Collisions in a Script
 To get the basic feel of how to use **tags + collisions** in a script, we will simply add a function to our script that prints out “friendly” when we collide with a friendly tagged object, “finish” when we collide with a finish tagged object, and “dead” when we collide with anything else.
 
-<script src="https://gist.github.com/sdhanson/4fde37c5d196b32ee3dd7e671390f741.js"></script>
+[Rocket Script](https://gist.github.com/sdhanson/4fde37c5d196b32ee3dd7e671390f741.js)
 
 We will walk through the code above, which is explained in the code comments.
 
@@ -424,7 +423,7 @@ Also note, the **build settings** is where you specify information about what de
 ### Scenes + Scripting
 Let’s implement the actual **game flow**. Earlier, we decided to print “friendly,” “finish,” or “dead” based on the tags on GameObjects the rocket collides with. Now, let’s add functionality to actually transition the scene with the flow we described above.
 
-<script src="https://gist.github.com/sdhanson/c2cc706b7df4b067a4c5afb55b980423.js"></script>
+[Rocket Script](https://gist.github.com/sdhanson/c2cc706b7df4b067a4c5afb55b980423.js)
 
 We will walk through the code above, which is explained in the code comments.
 
