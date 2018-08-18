@@ -150,7 +150,7 @@ Now, launch Unity.
   - For the Location field, find the GitHub repository you just made. I.E. I would select /Users/sarahanson/Documents/Github/vrsc-unity-test as the location for my project.
   - You can name your project whatever you like and keep it as Unity 3D.
 
-##### Individual Task
+#### Individual Task
   - Create a “Scenes” folder in the **Assets** folder
   - Save the open, untitled scene as “Level 1”
 
