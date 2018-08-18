@@ -88,8 +88,8 @@ Unity will open to the default window with a blank scene. The default window has
     a. **Scene view**: Shows the currently open scene
     
     b. **Game view**: Shows what the game looks like when you hit play. 
+    *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
     
-  *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
     c. **Toolbar**: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into each of these in more detail later on.
 
 You can move around each section for a workflow you like. This is my default workflow:
