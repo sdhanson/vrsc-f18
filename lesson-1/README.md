@@ -70,7 +70,7 @@ That’s it.
 
 Now, we will explore the Unity window/interface and project structure. 
 
-  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/new.png" width="500" height="500">
+  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/new.png" width="403" height="293">
 
 Create a new project
   - Open Unity and select “New”
@@ -101,7 +101,7 @@ Unity will open to the default window with a blank scene. The default window has
 
 You can move around each section for a workflow you like. This is my default workflow:
 
-  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/workflow.png" width="400" height="304">
+  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/workflow.png" width="600" height="454">
 
 Unity has opened us up to a default, untitled scene. Here is a great description of scenes from the Microsoft Unity guide:
 
