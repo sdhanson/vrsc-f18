@@ -222,7 +222,7 @@ In order to change the color of the terrain, we will create a new material:
   - Rename the material to something like “ground” 
   - Drag the asset onto the terrain **GameObject** 
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/material.png" width="400" height="219">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/material.png" width="660" height="404">
 
 
 Each material comes with a standard shader; when you add a new material to your GameObject, this shader will replace the old default shader on your GameObject. You can fiddle around with the other settings on the shader, but, for now, know this is the easiest way to give colors and textures to your GameObjects.
@@ -351,7 +351,7 @@ Side Note: If you change a value while playing the game, your changes are lost w
 
 ### Example: My Rocket Ship Values
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values.png" width="500" height="500">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values.png" width="300" height="300">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values2.png" width="280" height="70">
 
 
@@ -366,7 +366,7 @@ Create a field of obstacles for your rocket to maneuver around.
   - Create a **second platform**, the “landing platform” at the end of the series of obstacles, give it a material, and create a new prefab “landing platform”
   - Move the camera around so you get a good view of the game in the Game view, like below:
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png" width="660" height="454">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png" width="660" height="404">
 
 #### Tags
 From the Unity Manual: A **tag** is a reference word you can attach to one or more GameObjects. It is used mostly for scripting purposes as they are useful triggers for Colliders in scripts; they need to work out whether the player is interacting with an enemy, a prop, or a collectable, for example.
