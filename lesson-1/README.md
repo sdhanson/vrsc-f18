@@ -58,7 +58,7 @@ That’s it. When you want to use/change the code from the vrsc-f18 repo, be sur
 ### Unity Installation / Set-Up
   - Download Unity 2018.2.1 from this page.
   
-  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="500" height="500">
+  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="403" height="293">
 
 
   Note: The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
