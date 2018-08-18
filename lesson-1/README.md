@@ -75,15 +75,23 @@ Create a new project
   - Create!
 
 Unity will open to the default window with a blank scene. The default window has a few main sections: 
-1. Project / Console
-    a. Project: All the files in your project (like file explorer). You can drag and drop files into this area to add files to your project. 
-    b. Console: The window where you will see Debug messages, errors, etc when you run your project.
+1. **Project / Console**
+    
+    a. **Project**: All the files in your project (like file explorer). You can drag and drop files into this area to add files to your project. 
+    
+    b. **Console**: The window where you will see Debug messages, errors, etc when you run your project.
+
 2. Inspector: A detailed view of a selected component in the scene.
 3. Hierarchy: All the game objects in the scene and their relationships.
-4. Scene / Gamea. Scene view: Shows the currently open scene
-    b. Game view: Shows what the game looks like when you hit play. 
-    *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
-    c. Toolbar: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into each of these in more detail later on.
+4. Scene / Game
+
+  a. **Scene view**: Shows the currently open scene
+    
+  b. **Game view**: Shows what the game looks like when you hit play. 
+    
+  *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
+    
+  c. **Toolbar**: Pan, Move, Rotate, Scale, Rect, Catch-All. Pivot, local. Play, Pause, Advance. We will get into each of these in more detail later on.
 
 You can move around each section for a workflow you like. This is my default workflow:
 
@@ -139,9 +147,9 @@ First, we will create a new Unity project and set it up with a Github repo.
   2. Clone the repository onto the Desktop.
 
 Now, launch Unity.
-  1. Select New.
-  2. For the Location field, find the GitHub repository you just made. I.E. I would select /Users/sarahanson/Documents/Github/vrsc-unity-test as the location for my project.
-  3. You can name your project whatever you like and keep it as Unity 3D.
+  - Select New.
+  - For the Location field, find the GitHub repository you just made. I.E. I would select /Users/sarahanson/Documents/Github/vrsc-unity-test as the location for my project.
+  - You can name your project whatever you like and keep it as Unity 3D.
 
 ##### Individual Task
   - Create a “Scenes” folder in the **Assets** folder
