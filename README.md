@@ -1,8 +1,9 @@
 # VRSC Incubator Fall 2018: VR Dev Guide
-This is the VRSC Incubator Fall 2018 repository. This is your home base, and here you'll find resources to help you learn Unity, Game Development practices, and any additional XR dev skills your teams need! There is a folder for each lesson. Within each folder is a README.md with a step-by-step guide articulating the goal for the lesson. We will go through each lesson together at VRSC workshops, but you should look back at each lesson if you need a refresher while developing.
+
+This is the VRSC Incubator Fall 2018 repository. This is your home base, and here you'll find resources to help you learn Unity, Game Development practices, and any additional XR dev skills your teams need! There is a folder for each worksop. Within each folder is a README.md with a step-by-step guide articulating the goal for the workshop. We will go through each lesson together at VRSC workshops, but you should look back at each guide if you need a refresher while developing.
 
 ### Lesson Topics
-  * lesson-1: Unity + GitHub
+  * Lesson 1: Unity + GitHub
   
 ### Additional Resources
 
