@@ -131,7 +131,7 @@ The Transform property is simply the position, rotation and scale of any GameObj
 You add functionality to GameObjects by adding Components. Everything you add is a Component and they all show up in the Inspector window. There are MeshRender and SpriteRender Components; Components for audio and camera functionality; physics-related Components (colliders and rigidbodies), particle systems, path-finding systems, third-party custom Components, and more. You use a script Component to assign code to an object. Components are what bring your GameObjects to life by adding functionality. You can also add scripts to GameObjects, which can define certain functionality for the GameObject.”
 Here’s an example of the Unity window with an open scene from the Sharp Shooter Tutorial:
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/sharpshooter.png" width="400" height="219">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/sharpshooter.png" width="660" height="454">
 
 In the Hierarchy, we see all of the GameObjects for the Level 1 Scene. The Inspector shows us the details for the selected object, the main camera. In the Project tab, we see all of the imported assets for the project, including audio, textures, scripts, etc--everything we need to create this scene/level.
 While we only see the Assets folder in the Project window, the Unity project structure also includes Library, ProjectSettings, and Temp folders. This can be seen in the folder where you saved your Unity Project. For example, my Intro project is like this:
@@ -194,7 +194,7 @@ Let’s start by creating the ground!
 
 You should now have a terrain like below:
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/terrain.png" width="400" height="219">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/terrain.png" width="660" height="454">
 
 Side Note: As we transform GameObjects (i.e. rotate, change the position, scale, etc) you can use the Inspector to make these changes, Unity hotkeys, or the Toolbar:
 
@@ -264,7 +264,7 @@ Don’t forget to use the toolbar or Inspector to reset your GameObjects to the 
 
 ### Example Rocket (from yours truly):
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/rocket.png" width="528" height="514">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/rocket.png" width="328" height="314">
 
 Alright, so now we all have a rocket ship! Yay!
 
@@ -366,7 +366,7 @@ Create a field of obstacles for your rocket to maneuver around.
   - Create a **second platform**, the “landing platform” at the end of the series of obstacles, give it a material, and create a new prefab “landing platform”
   - Move the camera around so you get a good view of the game in the Game view, like below:
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png" width="400" height="219">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png" width="660" height="454">
 
 #### Tags
 From the Unity Manual: A **tag** is a reference word you can attach to one or more GameObjects. It is used mostly for scripting purposes as they are useful triggers for Colliders in scripts; they need to work out whether the player is interacting with an enemy, a prop, or a collectable, for example.
@@ -407,9 +407,7 @@ To switch scenes in Unity, we can use the Unity SceneManager which allows us to 
 
 With Level 1 open go to **File > Build Settings > Add open scenes**. 
 
-   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/build.png" width="500" height="500">
-  ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/build.png "Build Settings")
-
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/build.png" width="250" height="400">
 
 Now, the scenes we want in our game are in the **Scenes in Build** and are checkmarked with an index next to them. We will later access these scenes using their indices in our Rocket script.
 
