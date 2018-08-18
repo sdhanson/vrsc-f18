@@ -6,7 +6,11 @@ This is the VRSC Incubator Fall 2018 repository. This is your home base, and her
   * Lesson 1: Unity + GitHub
   
 ### Additional Resources
-
+  * [Unity User Manual](https://docs.unity3d.com/Manual/UnityManual.html)
+  * [Unity Scripting API](https://docs.unity3d.com/2018.1/Documentation/ScriptReference/index.html)
+  * [Unity Forum](https://forum.unity.com/forums/)
+  * [Microsoft C# guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
+  
 ### Final Note
 Each lesson contains a README.md reiterating the lessons we learn in each workshop. Use the README.md to follow along during the lesson and reinforce the lessons at later times. If we manipulate Unity throughout the lesson, completed code will be included in the folder.
 
