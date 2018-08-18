@@ -144,7 +144,7 @@ Now, launch Unity.
   3. You can name your project whatever you like and keep it as Unity 3D.
 
 ##### Individual Task
-  - Create a “Scenes” folder in the Assets folder
+  - Create a “Scenes” folder in the **Assets** folder
   - Save the open, untitled scene as “Level 1”
 
 Now, head back over to Github Desktop and look at your repository for this project. There are a bunch of new files! Create a commit message and **publish the repository**.
@@ -189,7 +189,11 @@ Also note, the terrain has a “default shader” attached to it.
 
 This shader component is empty--it has no values set and thus makes the terrain look white--and can be tweaked to create any type of look for the terrain. We could texture the terrain (i.e. give it a rocky look), tweak how it interacts with light, etc, but for now, we will simply change the color of the terrain.
 
-In order to change the color of the terrain, we will create a new material. **Assets > Create > Material**. You will see a “New Material” asset is created in your assets folder. Change the albedo on the asset to a nice ground-ish color, and rename it something like “ground”. Then, drag the asset onto the terrain GameObject. 
+In order to change the color of the terrain, we will create a new material:
+  - Go to **Assets > Create > Material**. 
+  - You will see a **New Material** asset is created in your **Assets** folder. Change the **albedo** on the asset to a nice ground-ish color.
+  - Rename the material to something like “ground” 
+  - Drag the asset onto the terrain **GameObject** 
 
 
 
@@ -200,10 +204,10 @@ Great! So the ground is set.
 ### Individual Task: Creating a Rocket Ship
 I am going to give you some background information on primitives, hierarchies, prefabs, and grouping objects. Then, you will have some time to create your own rocket!
 
-#### Primitives
+### Primitives
 We will be using primitives (Unity’s built in cube, sphere, place, etc) to model different objects in our game. These primitives can later be replaced with actual models, or, if they look cool enough, they can be kept in the game down the line.
 
-#### Hierarchy of Placeholder Art
+### Hierarchy of Placeholder Art
 When making a placeholder primitive art form, it is important to group the individual primitives (aka a cube representing a rocket body, a capsule representing the rocket nose, etc) that compose the overall art form (aka a rocket ship) under an empty game object and name everything appropriately, like so: 
 
 
@@ -211,16 +215,16 @@ This is a nice example of Unity’s hierarchy. We can make a GameObject a child 
 
 In this example, “Pretty Rocket Ship” is an empty GameObject, while the child Rocket Body is a cube. The children, “Starboard Booster” and “Port Booster”, are empty GameObjects with sphere “Tail” components nested underneath. 
 
-#### Prefabs
+### Prefabs
 In this example the GameObjects are blue! This means that they are prefabs. A prefab is a template for an object. So if you make a cube, scale it, rotate it, give it a material, and you want to use that exact set up again you can 1. duplicate the cube OR 2. create a prefab. To create a prefab, you drag the cube from the hierarchy to the assets folder. Then, you can use the template by dragging the prefab from the assets folder to the hierarchy. * You can make overall changes to prefabs that apply to every single prefab, which we will go into later *
 
 Side note: **Meshes should be kept away from the top level**. Aka each individual component (tail, rocket body) should have a mesh, but empty parent objects should not.
 
 
-#### Grouping
+### Grouping
 It is important to note that you can “snap” GameObjects into place with control shift / command shift (pc / mac). This helps the physics engine calculate the center of gravity as the center of the group of objects, not just one object.
 
-#### Your Turn
+### Your Turn
   - Make a rocket ship using primitives.
   - Make your rocket ship a prefab (hint: drag your complete rocket ship into Assets > Prefab folder)
   - Make a platform for the rocket ship to stand on.
@@ -228,11 +232,11 @@ It is important to note that you can “snap” GameObjects into place with cont
 
 Don’t forget to use the toolbar or Inspector to reset your GameObjects to the origin, scale the objects, and move them however you want.
 
-**** Example Rocket (from yours truly):
+### Example Rocket (from yours truly):
 
 Alright, so now we all have a rocket ship! Yay!
 
-**** Next Steps
+### Next Steps
 
 If we press play and enter game mode, nothing happens! This game is really boring right now!
 
@@ -249,7 +253,7 @@ We want to let the user control the rocket ship and fly around the landscape. In
   * Coroutines and Enumerations
   * Particle Effects
 
-#### Physics System and Colliders
+### Physics System and Colliders
 Here is a great description of a physics system from the Unity Manual:
 “To have convincing physical behaviour, an object in a game must accelerate correctly and be affected by collisions, gravity and other forces. Unity’s built-in physics engines provide components that handle the physical simulation for you. With just a few parameter settings, you can create objects that behave passively in a realistic way (ie, they will be moved by collisions and falls but will not start moving by themselves). By controlling the physics from scripts, you can give an object the dynamics of a vehicle, a machine, or even a piece of fabric.”
 
@@ -286,33 +290,33 @@ Quick overview of scripting: The default script is derived from the base class, 
 4. OnDestroy( ): fired right before the GameObject the script is attached to gets destroyed
 5. OnCollisionEnter( ): fired when the collider or rigidbody of the GameObject the script is attached to collides with another collider or rigidbody
 
-#### Rocket Script
+### Rocket Script
 The first motion we are going to add to our rocket is the ability to thrust upward [space bar] and rotate left [A] and right [D]. 
 
 <script src="https://gist.github.com/sdhanson/12c354bc3ba1147dd705a4e22a16c8ce.js"></script>
 
 We will walk through the code above, which is explained in the code comments.
 
-#### Your Turn
+### Your Turn
 Play the game! If your rocket ship doesn’t move, try and lower the mass of the ship until it moves at a speed you like.
 
 Our rocket is somewhat unstable, so freeze the position in the z direction and the rotation in the x and y direction on the rocket’s RigidBody.
 
  
 
-#### Controlling the Rocket Speed
+### Controlling the Rocket Speed
 Now, it would be really cool if we could control the speed of our thrust and rotation. Let’s add some variables to do just that.
 
 <script src="https://gist.github.com/sdhanson/b6640b5d33066687524f61cdcb40dd38.js"></script>
 
 We will walk through the code above, which is explained in the code comments.
 
-#### Your Turn
+### Your Turn
 Change the mass of the RigidBody so it is back at 1, and change the rcsThrust and shipThrust variables in the Inspector so that your rocket ship moves like it did before.
 
 Side Note: If you change a value while playing the game, your changes are lost when you stop playing!
 
-#### Example: My Rocket Ship Values
+### Example: My Rocket Ship Values
 
 
 
@@ -344,7 +348,7 @@ To create a tag for the friendly starting platform:
 #### Your Turn
 Tag the landing pad as “Finish” 
 
-#### Using Tags + Collisions in a Script
+### Using Tags + Collisions in a Script
 To get the basic feel of how to use tags + collisions in a script, we will simply add a function to our script that prints out “friendly” when we collide with a friendly tagged object, “finish” when we collide with a finish tagged object, and “dead” when we collide with anything else.
 
 <script src="https://gist.github.com/sdhanson/4fde37c5d196b32ee3dd7e671390f741.js"></script>
@@ -362,7 +366,7 @@ Open the duplicated scene. It should look the exact same as the Level 1 Scene. C
 
 It is important that we can clearly tell which scene we are on just be looking.
 
-#### Scene Management
+### Scene Management
 Now, let’s implement a game flow and link the two levels. Our game flow will be this: You start on Level 1. If you die (hit an untagged surface) on Level 1 or Level 2, you go back to Level 1. If you are on Level 1 and you make it to the landing pad, you go to Level 2. If you are on Level 2 and you make it to the landing pad, you ….. we’ll leave this choice up to you!! Maybe you start back on Level 1, maybe you make a Level 3, maybe you make a Win Screen. For now, we’ll just start back on Level 2, but feel free to change this up!
 
 To switch scenes in Unity, we can use the Unity SceneManager which allows us to manage at during run time. The SceneManager gives us easy access to scenes that are in our build through their index. This means, we have to add Level 1 and Level 2 to our build scenes. 
@@ -375,17 +379,17 @@ Now, the scenes we want in our game are in the **Scenes in Build** and are check
 
 Also note, the build settings is where you specify information about what device you want to build your platform on. This is important for virtual reality because we will have to install some APKs that give us access to certain headsets.
 
-#### Scenes + Scripting
+### Scenes + Scripting
 Let’s implement the actual game flow. Earlier, we decided to print “friendly,” “finish,” or “dead” based on the tags on GameObjects the rocket collides with. Now, let’s add functionality to actually transition the scene with the flow we described above.
 
 <script src="https://gist.github.com/sdhanson/c2cc706b7df4b067a4c5afb55b980423.js"></script>
 
 We will walk through the code above, which is explained in the code comments.
 
-#### Your Turn
+### Your Turn
 Play the game! Make sure when you hit an untagged obstacle you go back to Level 1 and if you complete a level you go back to Level 2.
 
-#### Lighting Bug Fix
+### Lighting Bug Fix
 Yay! Your scene loads correctly… but the lighting is way off! This is a built in bug in Unity. To get our scenes to load with the lighting we want, we must:
   - Go to **Window > Lighting > Settings**
   - Untick **Auto Generate**
@@ -393,7 +397,7 @@ Yay! Your scene loads correctly… but the lighting is way off! This is a built 
 
 Unity was trying to make the lighting for your scene at runtime...and failing. Now, your lighting for each level should be saved in an assets folder that Unity will load along with the level.
 
-#### Coroutines
+### Coroutines
 When you play your game, you should see that when a scene transition is triggered, the next scene loads immediately. This abrupt change is not the best game experience. We will now use coroutines to delay the scene transition by 1 second.
 
 Unity functions act sequentially—Unity does not move to the next function until another function ends, basically stopping all other functionality. A coroutine is a function that has the ability to pause execution and return control to Unity and then continue where it left off the following frame.
@@ -416,14 +420,14 @@ StartCoroutine(SomeCoroutine(1f));
 Let’s see this in practice in our code.
 
 
-#### Particle Systems
+### Particle Systems
 Finally, we will add some fun particle effects to our game. Unity provides a built in particle system that allows us to emit different “particles” from GameObjects. These “particles” are 2D default objects that we can customize with speed, color, texture, etc. They are emitted in 3D but they are 2D objects that are always oriented towards the canvas, so they always look like squares. 
 
 Our game will utilize three particles systems for different states of our game: a particles system when we are thrusting, a particles system when we collide with an obstacle and die, and a particle system for when we win a level! We will attach particle system GameObjects to our Rocket and trigger these particle systems from code.
 
 Before we dive into how to create and use a particle system, we will take a look at enumerations.
 
-#### Enumerations
+### Enumerations
 Enumerations (or enums) are custom types that we create in our script. They are a collection of words that are usually used to indicate different states of our game.
 For example, we might have an enumeration, like:
 
@@ -448,7 +452,7 @@ Then, we will switch our game functions depending on if we are alive, dead, or z
 
 In our game we will have three states, Alive, Dying, and Waiting, and these states will help us determine what movements are available to the player and what particle effects should be playing.
 
-#### Create and Use a Particle System
+### Create and Use a Particle System
 We have provided a unity package of the particle system you should download right here. Download this package, move it to your Assets folder, and then open the package in Unity. You will now have three particle systems prefabs. Feel free to move them to your Prefabs folder. 
 
 Attach all three particle systems to the rocket ship. 
