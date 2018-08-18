@@ -58,8 +58,7 @@ That’s it. When you want to use/change the code from the vrsc-f18 repo, be sur
 ### Unity Installation / Set-Up
   - Download Unity 2018.2.1 from this page.
   
-  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="100" height="100">
-  ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png?v=4&s=200 "Download Specifications")
+  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/install.png" width="500" height="500">
 
 
   Note: The Unity Installer will launch the Unity Download Assistant. Leave the default settings.
@@ -71,8 +70,7 @@ That’s it.
 
 Now, we will explore the Unity window/interface and project structure. 
 
-  ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/new.png "New Project")
-
+  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/new.png" width="500" height="500">
 
 Create a new project
   - Open Unity and select “New”
@@ -97,6 +95,7 @@ Unity will open to the default window with a blank scene. The default window has
     b. **Game view**: Shows what the game looks like when you hit play. 
     *Activates when you enter play mode (aka hit play). Play mode allows you to test your game and make changes. However, when you make changes in play mode, nothing is saved, so determine which tweaks you like, end play mode, and then redo the tweaks to make them last. You can give play mode a different color by going to Edit | Preferences | Colors | Playmode tint*
     
+      <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/tint.png" width="500" height="500">
       ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/tint.png "Playmode Tint")
 
     
@@ -104,6 +103,7 @@ Unity will open to the default window with a blank scene. The default window has
 
 You can move around each section for a workflow you like. This is my default workflow:
 
+  <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/workflow.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/workflow.png "Download Specifications")
 
 
@@ -119,11 +119,13 @@ And, here’s a great description of Unity GameObjects from the Microsoft guide:
 
 “Virtually everything in your scene is a GameObject. Think of System.Object in the .NET Framework. Almost all types derive from it. The same concept goes for GameObject. It’s the base class for all objects in your Unity scene. All of the objects shown below derive from a GameObject. 
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/graph.jpg" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/graph.jpg "GameObject Graph")
 
 
 A GameObject is pretty simple as it pertains to the Inspector window. You can see in the figure below an empty GameObject that was added to a scene; note its properties in the Inspector. GameObjects by default have no visual properties except the widget Unity shows when you highlight the object. At this point, it’s simply a fairly empty object.
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/gameobject.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/gameobject.png "GameObject in Hierarchy")
 
  
@@ -135,12 +137,14 @@ The Transform property is simply the position, rotation and scale of any GameObj
 You add functionality to GameObjects by adding Components. Everything you add is a Component and they all show up in the Inspector window. There are MeshRender and SpriteRender Components; Components for audio and camera functionality; physics-related Components (colliders and rigidbodies), particle systems, path-finding systems, third-party custom Components, and more. You use a script Component to assign code to an object. Components are what bring your GameObjects to life by adding functionality. You can also add scripts to GameObjects, which can define certain functionality for the GameObject.”
 Here’s an example of the Unity window with an open scene from the Sharp Shooter Tutorial:
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/sharpshooter.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/sharpshooter.png "Sharp Shooter")
 
 
 In the Hierarchy, we see all of the GameObjects for the Level 1 Scene. The Inspector shows us the details for the selected object, the main camera. In the Project tab, we see all of the imported assets for the project, including audio, textures, scripts, etc--everything we need to create this scene/level.
 While we only see the Assets folder in the Project window, the Unity project structure also includes Library, ProjectSettings, and Temp folders. This can be seen in the folder where you saved your Unity Project. For example, my Intro project is like this:
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/finder.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/finder.png "Finder")
 
 
@@ -200,10 +204,12 @@ Let’s start by creating the ground!
 
 You should now have a terrain like below:
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/terrain.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/terrain.png "Terrain")
 
 Side Note: As we transform GameObjects (i.e. rotate, change the position, scale, etc) you can use the Inspector to make these changes, Unity hotkeys, or the Toolbar:
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/toolbar.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/toolbar.png "Toolbar")
 
 Select, transform, rotate, scale, GUI, all
@@ -217,6 +223,7 @@ The key things to note about our new ground are the **Mesh Collider**, **Mesh Re
 
 Also note, the terrain has a “default shader” attached to it.
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/shader.png" width="500" height="500">
    ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/shader.png "Default Shader")
 
 
@@ -228,6 +235,7 @@ In order to change the color of the terrain, we will create a new material:
   - Rename the material to something like “ground” 
   - Drag the asset onto the terrain **GameObject** 
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/material.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/material.png "Terrain Material")
 
 
@@ -244,6 +252,7 @@ We will be using primitives (Unity’s built in cube, sphere, place, etc) to mod
 ### Hierarchy of Placeholder Art
 When making a placeholder primitive art form, it is important to group the individual primitives (aka a cube representing a rocket body, a capsule representing the rocket nose, etc) that compose the overall art form (aka a rocket ship) under an empty game object and name everything appropriately, like so: 
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/hierarchy.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/hierarchy.png "Rocket in Hierarchy")
 
 
@@ -270,6 +279,7 @@ Don’t forget to use the toolbar or Inspector to reset your GameObjects to the 
 
 ### Example Rocket (from yours truly):
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/rocket.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/rocket.png "Rocket")
 
 Alright, so now we all have a rocket ship! Yay!
@@ -340,6 +350,7 @@ Play the game! If your rocket ship doesn’t move, try and lower the mass of the
 
 Our rocket is somewhat unstable, so freeze the position in the z direction and the rotation in the x and y direction on the rocket’s RigidBody.
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/constraints.png" width="500" height="500">
    ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/constraints.png "Rotation constraints")
 
 ### Controlling the Rocket Speed
@@ -357,6 +368,8 @@ Side Note: If you change a value while playing the game, your changes are lost w
 
 ### Example: My Rocket Ship Values
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values.png" width="500" height="500">
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values2.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values.png "Rocket Values")
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/values2.png "Rocket Values")
 
@@ -372,6 +385,7 @@ Create a field of obstacles for your rocket to maneuver around.
   - Create a **second platform**, the “landing platform” at the end of the series of obstacles, give it a material, and create a new prefab “landing platform”
   - Move the camera around so you get a good view of the game in the Game view, like below:
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/level1.png "Level 1")
 
 
@@ -414,6 +428,7 @@ To switch scenes in Unity, we can use the Unity SceneManager which allows us to 
 
 With Level 1 open go to **File > Build Settings > Add open scenes**. 
 
+   <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/build.png" width="500" height="500">
   ![alt text](https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/build.png "Build Settings")
 
 
