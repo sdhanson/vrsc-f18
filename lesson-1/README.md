@@ -9,7 +9,7 @@
 ## Unity Basics
 ### What is Unity?
 
-“Unity is the ultimate game development platform” and game engine. A game engine is a software development environment designed for people to build video games. Basically, Unity is a tool that provides us a simple(ish) interface to easily create 2D and 3D applications. Unity uses C# and/or JavaScript.
+“Unity is the ultimate game development platform” and game engine. A game engine is a software development environment designed for people to build video games. Basically, Unity is a tool that provides us a simple(ish) interface to easily create 2D and 3D applications. Unity uses C# and/or JavaScript. Although game engines are primarily used for video games, they can be used to create any type of graphical interactive experience, such as training simulations, phone applications, etc.
 
 Another popular game engine is [Unreal Engine](https://en.wikipedia.org/wiki/Unreal_Engine).
 
@@ -109,7 +109,7 @@ And, here’s a great description of Unity GameObjects from the Microsoft guide:
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/graph.jpg" width="300" height="300">
 </p>
 
-A GameObject is pretty simple as it pertains to the Inspector window. You can see in the figure below an empty GameObject that was added to a scene; note its properties in the Inspector. GameObjects by default have no visual properties except the widget Unity shows when you highlight the object. At this point, it’s simply a fairly empty object.
+A GameObject is pretty simple as it pertains to the Inspector window. You can see in the figure below an empty GameObject that was added to a scene; note its properties in the Inspector. GameObjects by default have no visual properties except the widget Unity shows when you highlight the object. Basically, it's a "thing" inside your game.
 <p align="center">
    <img src="https://github.com/sdhanson/vrsc-f18/blob/master/lesson-1/images/gameobject.png" width="400" height="110">
 </p>
