@@ -1,4 +1,5 @@
 # Advanced Unity
+Welcome to the second VRSC workshop! This workshop is less hands-on than the basic Unity workshop. We want you to be aware of the cool things in Unity and then dive into them further when you need them. Reach out to Corvyn, Sara, or anyone on the VRSC team if you want to discuss certain topics in more depth or need help with a certain system.
 
 ## Navmeshes
 ### Introduction:
